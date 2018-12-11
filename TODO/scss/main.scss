@@ -50,6 +50,10 @@ body{
         border-radius: 50%;
         outline: none;
         cursor: pointer;
+        &:active{
+            background: rgb(53, 51, 51) url(/img/07_plus-512.png) no-repeat center;
+            background-size: 25px 25px;
+        }
     }
 }
 
@@ -113,11 +117,7 @@ body{
         border: none;
         outline: none;
         font-size: 12px;
-        cursor: pointer;
-        &:active{
-            background: rgb(46, 41, 41);
-        }
-    }
+    }   cursor: pointer;
 }
 
 .input-error{
@@ -136,8 +136,8 @@ body{
     border-radius: 50%;
     outline: none;
     cursor: pointer;
+    transition: 1s;
 }
-
 
 .checked{
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.7);
@@ -145,3 +145,14 @@ body{
     color: rgb(29, 27, 27);
     text-decoration: line-through;
 }
+
+.button-rotate{
+    background: #fff (53, 51, 51) url(/img/07_plus-512.png) no-repeat center;
+    background-size: 25px 25px;
+    transform: rotate(45deg);
+    transition: .6s;
+    &__remove{
+        transition: .6s;
+    }
+}
+
