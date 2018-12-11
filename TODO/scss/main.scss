@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff url(/img/2.png) no-repeat center 25%; 
+    background-size: 25% 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.add-input{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    &__search{
+        width: 40%;
+        height: 45px;
+        display: flex;
+        padding: 0 50px 0 20px;
+        font-size: 18px;
+        color: rgb(31, 29, 29);
+        border-radius: 4px;
+        border: 1px solid rgb(235, 224, 224);
+        border-bottom: none;
+        box-shadow: 5px 6px 21px -5px rgba(0,0,0,0.7);
+        opacity: .9;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__button{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-self: center;
+        margin: 0 15px 0 -35px;
+        z-index: 9999;
+        background:  url(/img/07_plus-512.png) no-repeat center;
+        background-size: 25px 25px;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.content-item{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0 20px 0;
+    overflow: scroll;
+    &__add-item{
+        width: 40%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 0 10px 0 20px;
+        align-self: center;
+        border-radius: 4px;
+        margin: 0 auto 2px;
+        overflow: scroll;
+        color: rgb(46, 43, 43);
+        background: rgb(213, 219, 223);
+        opacity: .9;
+        &:nth-child(odd){
+            background: rgb(150, 177, 192);
+        }
+    }
+}
+
+
+.error{
+    width: 30%;
+    height: 30%;
+    display: none;
+    position: absolute;
+    top: 5%;
+    z-index: 9999;
+    align-self: center;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(66, 63, 61);
+    background: rgb(255, 253, 253) url(../img/kisspng-robot-safety-robotics-formassembly-computer-robot-5ac7988da99aa5.1695848615230301576947.png)no-repeat center 90%;
+    background-size: 140px 140px;
+    box-shadow: 5px 6px 21px -5px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    &:hover{
+        background: rgb(232, 236, 234) url(../img/error.png)no-repeat center 90%;
+        background-size: 140px 140px;
+        transition: .6s;
+    }
+    &__button{
+        position: absolute; 
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 20px;
+        border-radius: 5px;
+        background: rgb(84, 126, 173);
+        color: beige;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        cursor: pointer;
+        &:active{
+            background: rgb(46, 41, 41);
+        }
+    }
+}
+
+.input-error{
+    @extend .add-input__search ;
+    &:focus{
+        display: none;
+    }
+}
+
+.remove-input__button{
+    width: 25px;
+    height: 25px; 
+    background: #fff  url(/img/close_red.png) no-repeat center;
+    background-size: 30px 30px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.checked{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.7);
+    background: rgb(147, 182, 155)!important;
+    color: rgb(29, 27, 27);
+    text-decoration: line-through;
+}
