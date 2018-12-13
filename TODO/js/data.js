@@ -1,45 +1,44 @@
 
-addItem.addEventListener('click',function(){
-    const addItem = document.getElementById("addItem");
-    const inputValue = document.getElementById("myInput").value;
-    
-    const addDiv = document.createElement("div");
-    addDiv.className = "content-item__add-item";
+addItem.addEventListener('click', (e) => {
+    const input = document.getElementById("myInput");
+    if (!input.value) {
+        const errorModal = document.getElementById('error');
+        const closeModalBtn = document.getElementById('removeError');
 
-    const close = document.createElement("button");
-    close.className = "remove-input__button";
-    const createItem = document.createTextNode(inputValue);
-    addDiv.appendChild(createItem);
-    addDiv.appendChild(close);
-
-    close.addEventListener('click', function(){
-        document.getElementById("content-item").removeChild(addDiv);
-    });
-    
-    if (!inputValue) {
-        const input = document.getElementById('myInput');
-        const error = document.getElementById('error');
-        const removeError = document.getElementById('removeError');
-
-        addItem.classList.add('button-rotate');
+        e.target.classList.add('button-rotate');
         error.style.display = "block";
         input.classList.add("input-error");
         
-        removeError.addEventListener('click', function(){
-        error.style.display = "none";
-        input.classList.remove("input-error");
-        addItem.classList.remove('button-rotate');
-        addItem.classList.add('button-rotate__remove');
-    });
-
-    }else{
-        const addToContent = document.getElementById("content-item");
-        addToContent.appendChild(addDiv);
-        document.getElementById("myInput").value = '';
+        removeError.addEventListener('click', () => {
+            error.style.display = "none";
+            input.classList.remove("input-error");
+            addItem.classList.remove('button-rotate');
+            return;
+        });
     }
 
-    addDiv.addEventListener('click', function(){
-    addDiv.classList.toggle('checked');
-    });
+    const addBtn = document.getElementById("addItem");
     
+    const newItem = document.createElement("div");
+    newItem.className = "content-item__add-item";
+
+    const closeIcon = document.createElement("button");
+    closeIcon.className = "remove-input__button";
+
+    newItem.innerHTML = input.value;
+    newItem.appendChild(closeIcon);
+
+    closeIcon.addEventListener('click',() => {
+        document.getElementById("content-item").removeChild(newItem);
+    });
+
+    const addToContent = document.getElementById("content-item");
+    addToContent.appendChild(newItem);
+    input.value = '';
+
+    newItem.addEventListener('click', () => {
+        newItem.classList.toggle('checked');
+    });
 }); 
+
+
