@@ -7,12 +7,12 @@
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background: #fff url(/img/2.png) no-repeat center 25%; 
-    background-size: 25% 180px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: hidden;
+    background: #fff url(../img/2.png) no-repeat center 25%; 
+    background-size: 25% 180px;
 }
 
 .add-input{
@@ -44,15 +44,15 @@ body{
         align-self: center;
         margin: 0 15px 0 -35px;
         z-index: 9999;
-        background:  url(/img/07_plus-512.png) no-repeat center;
+        background: url(../img/07_plus-512.png) no-repeat center;
         background-size: 25px 25px;
         border: none;
         border-radius: 50%;
         outline: none;
         cursor: pointer;
+        transition: .8s;
         &:active{
-            background: rgb(53, 51, 51) url(/img/07_plus-512.png) no-repeat center;
-            background-size: 25px 25px;
+            background: rgb(43, 41, 41) ;
         }
     }
 }
@@ -67,22 +67,21 @@ body{
         height: 40px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 0 10px 0 20px;
         align-self: center;
-        border-radius: 4px;
+        justify-content: space-between;
+        padding: 0 10px 0 20px;
         margin: 0 auto 2px;
         overflow: scroll;
-        color: rgb(46, 43, 43);
         background: rgb(213, 219, 223);
+        color: rgb(46, 43, 43);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 4px;
         opacity: .9;
         &:nth-child(odd){
             background: rgb(150, 177, 192);
         }
     }
 }
-
 
 .error{
     width: 30%;
@@ -93,12 +92,12 @@ body{
     z-index: 9999;
     align-self: center;
     padding: 20px;
+    background: rgb(255, 253, 253) url(../img/kisspng-robot-safety-robotics-formassembly-computer-robot-5ac7988da99aa5.1695848615230301576947.png)no-repeat center 90%;
+    background-size: 140px 140px;
+    color: rgb(66, 63, 61);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
     text-align: center;
-    color: rgb(66, 63, 61);
-    background: rgb(255, 253, 253) url(../img/kisspng-robot-safety-robotics-formassembly-computer-robot-5ac7988da99aa5.1695848615230301576947.png)no-repeat center 90%;
-    background-size: 140px 140px;
     box-shadow: 5px 6px 21px -5px rgba(0,0,0,0.7);
     border-radius: 10px;
     &:hover{
@@ -111,13 +110,14 @@ body{
         bottom: 10px;
         right: 10px;
         padding: 8px 20px;
-        border-radius: 5px;
         background: rgb(84, 126, 173);
         color: beige;
+        border-radius: 5px;
         border: none;
         outline: none;
         font-size: 12px;
-    }   cursor: pointer;
+        cursor: pointer;
+    }   
 }
 
 .input-error{
@@ -130,29 +130,33 @@ body{
 .remove-input__button{
     width: 25px;
     height: 25px; 
-    background: #fff  url(/img/close_red.png) no-repeat center;
+    background: #fff  url(../img/close_red.png) no-repeat center;
     background-size: 30px 30px;
     border: none;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
+    &:active{
+        background: rgb(37, 36, 36) ;
+    }
+    &:hover{
+        background: rgb(66, 64, 64)  url(../img/close_red.png) no-repeat center;
+        background-size: 30px 30px;
+    }
 }
 
 .checked{
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 0px 0px rgba(187, 144, 144, 0.7);
     background: rgb(147, 182, 155)!important;
     color: rgb(29, 27, 27);
     text-decoration: line-through;
 }
 
 .button-rotate{
-    background: #fff (53, 51, 51) url(/img/07_plus-512.png) no-repeat center;
+    background: #fff (53, 51, 51) url(../img/07_plus-512.png) no-repeat center;
     background-size: 25px 25px;
     transform: rotate(45deg);
     transition: .6s;
-    &__remove{
-        transition: .6s;
-    }
 }
 
