@@ -25,9 +25,9 @@ body {
 
 .initial-container {
   width: 750px;
-  height: 640px;
+  height: 550px;
   min-width: 750px;
-  min-height: 640px;
+  min-height: 550px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
