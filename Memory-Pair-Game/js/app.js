@@ -43,40 +43,37 @@ class App{
 
         const initialContainer = document.createElement('div');
         initialContainer.classList.add('initial-container');
-        document.body.appendChild(initialContainer);
         
         const gameTitle = document.createElement('h2');
         gameTitle.textContent = "Memory – Pair Game";
-        initialContainer.insertAdjacentElement('beforebegin', gameTitle);
 
-        this.addAllimg(allImgList, initialContainer);
+        this.addAllContent(allImgList, initialContainer, gameTitle);
     }
 
-    addAllimg(allImgList, initialContainer){
+   addAllContent(allImgList, initialContainer, gameTitle){
         
-        allImgList.forEach(img => {
-            const createNewCard = document.createElement('div');
-            createNewCard.className = "new-card";
-            createNewCard.setAttribute('data-name', img.name); 
-            
-            const newImg = document.createElement('img');
-            newImg.className = "new-card_img";
-            newImg.setAttribute('src', img.src); 
+    allImgList.forEach(img => {
+        const createNewCard = document.createElement('div');
+        createNewCard.className = "new-card";
+        createNewCard.setAttribute('data-name', img.name); 
         
-            initialContainer.appendChild(createNewCard);
-            createNewCard.appendChild(newImg);
-        
-        });
-
-        this.checkCard(initialContainer);
+        const newImg = document.createElement('img');
+        newImg.className = "new-card_img";
+        newImg.setAttribute('src', img.src); 
     
-    }
+        initialContainer.appendChild(createNewCard);
+        createNewCard.appendChild(newImg);
+        initialContainer.insertAdjacentElement('beforebegin', gameTitle);
+        document.body.appendChild(initialContainer);
 
-    checkCard(initialContainer, newImg){
+        this.checkCard(initialContainer, createNewCard); 
+    });     
+}
+    checkCard(initialContainer, createNewCard){
         initialContainer.addEventListener('mousedown', onMouseDown.bind(this)); 
         function onMouseDown (event){
 
-            if( event.target == newImg || this.isTwoCardsActive || event.target == initialContainer ){
+            if( event.target != createNewCard || this.isTwoCardsActive ){
                 return;
             }else{
                 event.target.classList.add('new-card_active');
