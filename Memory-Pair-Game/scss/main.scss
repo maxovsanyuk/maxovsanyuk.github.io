@@ -48,7 +48,7 @@ body{
     background: rgba(111, 145, 145, 0.452);
     border: .5px solid rgb(146, 143, 143);
     border-radius: 4px; 
-    transition: .8s;
+    transition: .6s;
     &:hover{
         background: rgba(67, 185, 185, 0.301);
     }
@@ -68,16 +68,16 @@ body{
     &_remove{
         visibility: hidden;
         background:rgba(55, 151, 71, 0.300);
-        transition: .8s;
+        transition: .6s;
         img{
             visibility: hidden;
             transform: rotateZ(360deg);
-            transition: .8s;
+            transition: .6s;
             transform: scale(1.1);
         }
         &:hover{
             background:rgba(55, 151, 71, 0.300);
-            transition: .8s;
+            transition: .6s;
         }
     }
     &_img{
