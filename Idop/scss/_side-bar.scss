@@ -1,0 +1,399 @@
+.default-container-size{
+    width: 45px;
+    height: 45px;
+}
+
+.side-bar{
+    width: 130px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../img/BgNav.png)no-repeat center ;
+    background-size: cover;
+    overflow: hidden;
+    &__top{
+        padding-top: 20px;
+    }
+    &__bottom{
+        padding-bottom: 20px; 
+    }
+    &-item{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::after{
+            content: url(../img/Aktiv.png);
+            visibility: hidden;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+        &::before{
+            content: url(../img/Trenner.png);
+            position: absolute;
+            bottom: 0;
+        }
+        &:hover .side-bar__profile-photo{
+            border: 2px solid rgb(219, 209, 209);
+        }
+        &:hover .side-bar__board{
+            background: url(../img/BgBoard-act.png)no-repeat center;
+            background-size: contain;
+        }
+        &:hover .side-bar__projects{
+            background: url(../img/BgProjects-act.png)no-repeat center;
+            background-size: contain;
+        }
+        &:hover .side-bar__settings{
+            background: url(../img/BgSettings-act.png)no-repeat center;
+            background-size: contain;
+        }
+        &:hover .side-bar__upgrade{
+            background: url(../img/React-act.png)no-repeat center;
+            background-size: contain;
+        }
+        &:hover .side-bar__logout{
+            background: url(../img/Log-out-act.png)no-repeat center;
+            background-size: contain;
+        }
+        &:hover .side-bar-item__item-title{
+            color: #dadde0;
+        }
+        &:hover{
+            &::after{
+                content: url(../img/Aktiv.png);
+                visibility: visible;
+                position: absolute;
+                top: 10px;
+                left: 0; 
+            }
+            &::before{
+                content: url(../img/Trenner-Act.png);
+                position: absolute;
+                bottom: 0;
+            }
+            cursor: pointer;
+        }
+        &__counter-unread{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-family: "Helvetica Neue";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background: #ff503f;
+            position: absolute;
+            top: 15px;
+            right: 25px; 
+        }
+        &__counter-read {
+            @extend .side-bar-item__counter-unread;
+            background: #adadad;
+            top: 13px;
+            right: 22px;
+        }
+        &__item-title{
+            font-size: 18px;
+            padding-top: 10px;
+            font-family: "Helvetica Neue";
+            color: #4b4e52;
+        }
+    }
+    &__profile-photo{
+        width: 90px;
+        height: 90px;
+        background: url(../img/prof-photo.png) no-repeat center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    &__board{
+        @extend .default-container-size;
+        background: url(../img/Bgboard.png)no-repeat center;
+        background-size: contain;
+        border-radius: 50%;
+    }
+    &__projects{
+        @extend .default-container-size;
+        background: url(../img/BgProjects.png)no-repeat center;
+        background-size: contain;
+    }
+    &__settings{
+        @extend .default-container-size;
+        background: url(../img/BgSettings.png)no-repeat center;
+        background-size: contain;
+    }
+    &__upgrade{
+        @extend .default-container-size;
+        background: url(../img/React.png)no-repeat center; 
+        background-size: contain;
+    }
+    &__logout{
+        @extend .default-container-size;
+        background: url(../img/Log-out.png)no-repeat center; 
+        background-size: contain;
+    }
+}
+
+@media screen and (max-device-height: 800px) {
+    .side-bar {
+        width: 90px;
+    }
+    .side-bar-item {
+        height: 100px;
+    }
+    .side-bar__profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .side-bar-item__counter-unread{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 20px; 
+        font-size: 12px;
+    }
+    .side-bar-item__counter-read {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-family: "Helvetica Neue";
+        color: rgb(255, 255, 255)s;
+        font-weight: bold;
+        background: #adadad;
+        top: 8px;
+        right: 16px;
+    }
+    .default-container-size{
+        width: 30px;
+        height: 30px;
+    }
+    .side-bar-item__item-title{
+        font-size: 14px;
+    }
+    .side-bar-item:hover{
+        &::after{
+            content: url(../img/Aktiv-media.png);
+            visibility: visible;
+            position: absolute;
+            top: 15px;
+            left: 0; 
+        }
+    }    
+}
+
+
+@media screen and (max-device-height: 700px) {
+    .side-bar {
+        width: 90px;
+    }
+    .side-bar-item {
+        height: 100px;
+    }
+    .side-bar__profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .side-bar-item__counter-unread{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 20px; 
+        font-size: 12px;
+    }
+    .side-bar-item__counter-read {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-family: "Helvetica Neue";
+        color: rgb(255, 255, 255)s;
+        font-weight: bold;
+        background: #adadad;
+        top: 8px;
+        right: 16px;
+    }
+    .default-container-size{
+        width: 30px;
+        height: 30px;
+    }
+    .side-bar-item__item-title{
+        font-size: 14px;
+    }
+    .side-bar-item:hover{
+        &::after{
+            content: url(../img/Aktiv-media.png);
+            visibility: visible;
+            position: absolute;
+            top: 15px;
+            left: 0; 
+        }
+    } 
+}
+
+@media screen and (max-device-height: 650px) {
+    .side-bar {
+        width: 60px;
+    }
+    .side-bar-item {
+        height: 80px;
+    }
+    .side-bar__profile-photo {
+        width: 40px;
+        height: 40px;
+    }
+    .side-bar-item__counter-unread{
+        width: 15px;
+        height: 15px;
+        top: 12px;
+        right: 15px; 
+        font-size: 7px;
+    }
+    .side-bar-item__counter-read {
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        font-size: 7px;
+        font-family: "Helvetica Neue";
+        color: rgb(255, 255, 255)s;
+        font-weight: bold;
+        background: #adadad;
+        top: 8px;
+        right: 10px;
+    }
+    .default-container-size{
+        width: 20px;
+        height: 20px;
+    }
+    .side-bar-item__item-title{
+        font-size: 10px;
+    }
+    .side-bar-item:hover{
+        &::after{
+            visibility: hidden;
+        }
+    }    
+}
+
+@media screen and (max-device-height: 500px) {
+    .side-bar {
+        width: 60px;
+    }
+    .side-bar-item {
+        height: 65px;
+    }
+    .side-bar__profile-photo {
+        width: 30px;
+        height: 30px;
+    }
+    .side-bar-item__counter-unread{
+        width: 10px;
+        height: 10px;
+        top: 10px;
+        right: 15px; 
+        font-size: 5px;
+    }
+    .side-bar-item__counter-read {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        font-size: 5px;
+        font-family: "Helvetica Neue";
+        color: rgb(255, 255, 255)s;
+        font-weight: bold;
+        background: #adadad;
+        top: 8px;
+        right: 15px;
+    }
+    .default-container-size{
+        width: 15px;
+        height: 15px;
+    }
+    .side-bar-item__item-title{
+        font-size: 10px;
+    }
+    .side-bar-item:hover{
+        &::after{
+            visibility: hidden;    
+        }
+    }
+    .side-bar-item__item-title {
+        font-size: 8px;
+    }    
+}
+
+@media screen and (max-device-height: 450px) {
+    .side-bar {
+        width: 50px;
+    }
+    .side-bar-item {
+        height: 55px;
+    }
+    .side-bar__profile-photo {
+        width: 30px;
+        height: 30px;
+    }
+    .side-bar-item__counter-unread{
+        width: 10px;
+        height: 10px;
+        top: 10px;
+        right: 10px; 
+        font-size: 5px;
+    }
+    .side-bar-item__counter-read {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        font-size: 5px;
+        font-family: "Helvetica Neue";
+        color: rgb(255, 255, 255)s;
+        font-weight: bold;
+        background: #adadad;
+        top: 8px;
+        right: 15px;
+    }
+    .default-container-size{
+        width: 15px;
+        height: 15px;
+    }
+    .side-bar-item__item-title{
+        padding-top: 0px;
+        font-size: 8px;
+    }
+    .side-bar-item:hover{
+        &::after{
+            visibility: hidden;    
+        }
+    }
+    .side-bar-item::before{
+        content: url(../img/Trenner-Act.png);
+        transform: scale(.5);
+        position: absolute;
+        bottom: 0;
+    }    
+    .side-bar{
+        &__top{
+            padding-top: 0px;
+        }
+        &__bottom{
+            padding-bottom: 0px; 
+        }
+    }
+}
+
+
+@media screen and (max-device-height: 320px) {
+    .side-bar {
+        width: 50px;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,98 @@
+.user-item{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    &:hover{
+        background: rgb(174, 205, 214);
+    }
+    &:hover .user-data{
+        color: #cf7e7e;
+    }
+    &:hover .user-data-activity{
+        color: #5e5858;
+    }
+}
+.color{
+    color: rgb(75, 75, 75);
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    margin-left: 10px;
+    color: #bababa;
+    &-activity{
+        font-size: 14px;
+        color: #ccc;
+    }
+}
+.scale{
+    transform: scale(1.3);
+}
+
+@media screen and (max-device-width: 1400px) {
+    .user-data {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-device-width: 1300px) {
+    .user-data {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-device-width: 1200px) {
+    .user-item {
+        height: 70px;
+    }
+}
+
+@media screen and (max-device-width: 1000px) {
+    .user-data {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    .user-data{
+        display: none;
+    }
+    .display-none{
+        display: none;
+    }    
+    .user-show-online {
+        margin-right: 0;
+    }
+    .user-show-offline {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+    .user-item {
+        height: 60px;
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+    .user-item {
+        height: 45px;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
+    .user-item {
+        height: 40px;
+    }
+}
+
+@media screen and (max-device-width: 350px) {
+    .user-item {
+        height: 35px;
+    }
+}
