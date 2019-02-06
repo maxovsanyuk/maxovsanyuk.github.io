@@ -47,6 +47,7 @@ body{
 		border: 1px solid rgb(202, 199, 199);
 		border-radius: 2px; 
 		position: absolute;
+		visibility: hidden;
 		opacity: 0;
 		transition: .5s;
 		top: 80px;
@@ -106,6 +107,34 @@ body{
 			content: 'More';
 		}
 	}
+	&__more-from-google{
+		width: 100%;
+		height: 40px;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px!important;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: #444;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		&:hover{
+			text-decoration: underline!important;
+			background: rgba(241, 240, 240, 0.753);
+		}
+		&:active{
+			color: rgb(219, 210, 210);
+		}
+		&::after{
+			content: 'Even more from Google';
+		}
+	}
 	&__hidden-item{
 		width: 33.3%;
 		height: 25%;
@@ -113,6 +142,9 @@ body{
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: flex-start;
+		&:hover span{
+			color: rgb(60, 75, 161);
+		}
 	}
 	&_hidden-add-apps{
 		display: none;
@@ -228,20 +260,28 @@ body{
 }
 
 #show-apps:checked ~ .google-popup__hidden-apps{
-	opacity: 1;
+	visibility: visible;
 	transition: 1s;
+	opacity: 1;
 }
 
 #show-hidden-apps{
-	display: none;
+	-webkit-appearance: none;
+	margin: 0;
+	&:focus{
+		outline: none;
+	}
 }
 
 #show-hidden-apps:checked ~ .google-popup__hidden-item{
 	display: flex;
 }
 
-#show-hidden-apps:checked ~ .google-popup__more-btn{
+#show-hidden-apps:checked{
 	display: none;
+}
+#show-hidden-apps:checked ~ .google-popup__more-from-google{
+	display: flex;
 }
 
 // Animathion
