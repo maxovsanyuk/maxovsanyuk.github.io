@@ -166,7 +166,7 @@ body {
     .google-popup__hidden-item:hover span {
       color: #3c4ba1; }
     .google-popup__hidden-item:focus {
-      outline: none; }
+      color: #3c4ba1; }
   .google-popup_hidden-add-apps {
     display: none; }
   .google-popup__apps-icon {
