@@ -101,6 +101,7 @@
     right: 25px;
     z-index: 999;
 }
+
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -204,3 +205,14 @@
     opacity: .75;
     color: black;
 }
+
+@media screen and (max-width: 500px) {
+      .slick-next
+      {
+          right: 0px;
+      }
+      .slick-prev
+      {
+          left: 0px;
+   }}
+  
