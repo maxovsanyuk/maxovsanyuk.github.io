@@ -1,0 +1,243 @@
+body{
+	overflow-x: hidden;
+}
+
+.biografie{
+	width: 100%;
+	height: 465px;
+	display: flex;
+	&__photo-container{
+		
+		height: inherit;
+		display: flex;
+		padding: 0 80px;
+		align-items: center;
+	}
+	&__first-photo{
+		width: 300px;
+		max-width: 300px;
+		height: 300px;
+		background: url(../img/photo.png)no-repeat center;
+		background-size: cover;
+		transition: .3s;
+		animation-delay: 1s;
+		&:hover{
+			border-radius: 50%; 
+		}
+	}
+	&__second-photo{
+		@extend .biografie__first-photo ;
+		background: url(../img/pic2.png)no-repeat center;
+		background-size: cover;
+	}
+	&__info{
+		width: 60%;
+		height: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-right: 80px;
+		position: relative;
+		article{
+			font-size: 28px;
+			color: #000;
+			position: absolute;
+			top: 30px;
+		}
+		p{
+			width: 100%;
+			height: 65%;
+			font-size: 14px;
+			color: #686666;
+			line-height: 30px;
+			overflow: auto;
+		}
+		&_padding-left{
+			padding: 0 0 0 80px;
+		}
+	}
+}
+
+@media screen and (min-width: 1400px){
+	.biografie__info{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.footer__contacts div{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.header {
+		height: 150px!important;
+	}
+	.header__full-name {
+		height: 90px;
+		padding-left: 40px;
+	}
+	.header__nav {
+		height: 60px;
+		width: calc(100% - 80px);
+		padding: 0px 40px;
+	}
+	.biografie {
+		height: 350px;
+	}
+	.biografie__photo-container {
+		padding: 0 40px;
+	}
+	.biografie__first-photo, .biografie__second-photo {
+		width: 250px;
+		max-width: 250px;
+		height: 250px;
+	}
+	.biografie__info {
+		padding-right: 40px;
+	}
+	.biografie__info p {
+		height: 70%;
+		margin: 0;
+	}
+	.biografie__info article {
+		top: 15px;
+	}
+	.biografie__info_padding-left {
+		padding: 0 0 0 40px;
+	}
+	.footer__contacts {
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.footer__contacts div{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.header__nav__link {
+		font-size: 12px;
+	}
+	.footer__contacts div {
+		font-size: 12px;
+	}
+	.footer {
+		height: 120px!important;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.header__nav {
+    	width: calc(100% - 40px);
+    	padding: 0px 20px;
+	}
+	.header {
+		height: 120px!important;
+	}
+	.biografie__first-photo{
+		width: 200px;
+		max-width: 200px;
+		height: 200px;
+	}
+	.biografie {
+		height: 300px;
+	}
+	.biografie__info p {
+		font-size: 12px;
+	}
+	.biografie__info article {
+		top: 10px;
+	}
+	.biografie__photo-container {
+		padding: 0 20px;
+	}
+	.biografie__info {
+		padding-right: 20px;
+	}
+	.header__full-name {
+		padding-left: 20px;
+	}
+	.biografie__info_padding-left {
+		padding: 0 0 0 20px;
+	}
+	.footer__contacts div {
+		font-size: 10px;
+	}
+	.footer__tittle article {
+		font-size: 20px!important;
+	}
+	.slick-slide {
+		height: 300px;
+	}
+	.footer__contacts {
+		padding-right: 20px!important;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.header__nav {
+		display: none;
+	}
+	.header__full-name{
+		display: none;
+	}
+	.header {
+		height: 80px!important;
+	}
+	.header__full-name {
+		font-size: 24px;
+	}
+	.biografie__photo-container {
+		justify-content: center;
+	}
+	.biografie {
+		height: 650px;
+		flex-direction: column;
+	}
+	.biografie__first-photo{
+		width: 300px;
+		max-width: 300px;
+		height: 300px;
+		margin-top: 40px;
+	}
+	.biografie__info {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+	.biografie__info p {
+		width: 90%;	 
+	}
+	.slick-slide {
+		height: 300px;
+	}		
+	.biografie__second-photo {
+		margin: 0px 0 50px 0;
+	}
+	.biografie__info{
+		height: 550px;
+	}
+	.footer__tittle article {
+		font-size: 18px!important;
+		padding-left: 20px!important;
+	}
+	.footer .footer__tittle {
+		width: 50%;
+	}
+	.footer__contacts {
+		padding-left: 100px;
+	}
+	.slick-slide {
+		height: 250px!important;
+	}
+	.slick-prev:before, .slick-next:before {
+		font-size: 25px!important;
+	}
+}

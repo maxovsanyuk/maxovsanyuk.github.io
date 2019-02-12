@@ -1,0 +1,10 @@
+.first-slider-img{
+	width: 100%;
+	height: 400px;
+	background: url(../img/google-earth-view-1260.jpg)no-repeat center;
+	background-size: cover;
+}
+.second-slider-img{
+	@extend .first-slider-img ;
+	background: url(../img/google-earth-view-6364.jpg)no-repeat center;
+}
