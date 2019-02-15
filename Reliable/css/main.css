@@ -1057,7 +1057,7 @@ img:nth-child(3) {
 .hidden-menu__link:active {
   color: #999; }
 
-.shov-hidden-menu {
+.show-hidden-menu {
   visibility: visible;
   opacity: 1;
   top: 100px; }
