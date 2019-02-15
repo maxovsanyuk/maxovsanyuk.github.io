@@ -1,0 +1,80 @@
+
+.footer{
+	width: 100%;
+	height: 460px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__links{
+		width: 100%;
+		height: 125px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+		border-top: 1px solid #ccc;
+		background: url(../img/Fillers.png)no-repeat bottom center;
+		a{
+			font-size: 16px;
+			font-family: "Lato";
+			color: rgb(153, 153, 153);
+			font-weight: bold;
+			line-height: 1.2;
+			text-decoration: none;
+			padding: 0 30px;
+			transition: .5s;
+			&:hover{
+				color: #008ea5;
+			}
+		}
+	}
+	&__contact-info{
+		width: 80%;
+		height: 175px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #eee;
+		article{
+			font-size: 14px;
+			font-family: "Lato";
+			color: rgb(170, 170, 170);
+			line-height: 1.929;
+			transition: .5s;
+			&:hover{
+				color: #008ea5;
+			}
+		}
+		span{
+			font-size: 14px;
+			padding: 20px 0;
+			font-family: "Lato";
+			color: rgb(170, 170, 170);
+			line-height: 1.929;
+			transition: .5s;
+			&:hover{
+				color: #008ea5;
+			}
+		}
+		a{
+			font-size: 13px;
+			font-family: "Lato";
+			color: rgb(225, 170, 110);
+			font-weight: bold;
+			line-height: 2.109;
+			text-decoration: none;
+		}
+	}
+	h4{
+		margin-top: 30px;
+		font-size: 12px;
+		font-family: "Lato";
+		color: rgba(170, 170, 170, 0.6);
+		line-height: 1.2;
+		transition: .5s;
+		&:hover{
+			color: #008ea5;
+		}
+	}
+}

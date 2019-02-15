@@ -140,7 +140,7 @@ bottom: 10%;
     }
 
 }
-
+animation: background 8s infinite linear;
 @keyframes background {
     0%  {background: rgb(249, 250, 247) url(/img/1.png)no-repeat center center;background-size: 90% 90%;}
     25% {background: rgb(249, 250, 247) url(/img/2.png)no-repeat center center;background-size: 90% 90%;}
