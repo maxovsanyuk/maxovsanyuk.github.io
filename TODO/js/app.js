@@ -22,7 +22,7 @@ class App {
         const closeModalBtn = document.getElementById('removeError');
         const addItemBtn = document.getElementById('addItemBtn');
         addItemBtn.classList.add('button-rotate');
-            
+
         error.style.display = "block";
         input.classList.add("input-error");
 
@@ -43,7 +43,7 @@ class App {
         document.getElementById("content-item").appendChild(newItem);
 
         closeIcon.addEventListener('click', this.onRemoveBtnClick);
-        
+
         this.crossOutText(newItem);
     }
 
@@ -62,6 +62,5 @@ class App {
 
 const app = new App();
 app.init();
-
 
 
