@@ -7,10 +7,9 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initialscale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../css/flags.css">
+	<link rel="stylesheet" type="text/css" href="css/flags.css">
 	<link rel="stylesheet" type="text/css" href="css/dd.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -29,14 +28,16 @@
 		</div>
 		<div class="header__bottom">
 			<div class="logo">
-				<a href="#"><img src="img/LSPlogo.png" alt="logo"></a>
+				<a href="#"><img class="header-logo" src="img/LSPlogo.png" alt="logo"></a>
 			</div>
 			<div class="header-article">
 				<article>Your Oils</article>
 				<span>OUR TOOLS!</span>
 			</div>
-			<input type="search" placeholder="Search" class="header-search">
-			<span class="some-number">1.800.336.6308</span>
+			<div class="search-input">
+				<input type="search" placeholder="Search" class="header-search">
+				<span class="some-number">1.800.336.6308</span>
+			</div>
 		</div>
 	</header>
 
@@ -56,6 +57,14 @@
 	</nav>
 
 	<section class="slider-container">
+
+	<div class="lazy">
+		<div><img src="img/slider-1.png" alt=""></div>
+		<div><img src="img/Layer6.png" alt=""></div>
+		<div><img src="img/Layer10.png" alt=""></div>
+		<div><img src="img/Layer11.png" alt=""></div>
+	</div>
+
 		<div class="slider-bottom-all-img">
 			<a href="#" class="slider-bottom-img bottom-img1"></a>
 			<a href="#" class="slider-bottom-img bottom-img2"></a>
@@ -350,15 +359,21 @@
 	</div>
 </footer>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/jquery.dd.min.js"></script>
-	<script src="src/bootstrap-input-spinner.js"></script>
-	<script src="js/index.js"></script>
+	<script>
+		$("#countries").msDropdown();
+	</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/main-index.js"></script>
+
 </body>
 
 </html>
+
+
 
 
 

@@ -1,0 +1,377 @@
+
+
+.main-container{
+	width: 100%;
+	height: 1530px;
+	padding: 0 11%;
+}
+
+
+.full-patch{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 35px;
+	background: #fff;
+	a{
+		padding-right: 10px;
+		font-size: 11px;
+		font-family: "Lato";
+		color: rgb(137, 137, 137);
+		text-decoration: none;
+		text-transform: uppercase;
+		user-select: none;
+		&:active{
+			color: #ccc;
+		}
+		&::after{
+			content: '>>';
+			position: relative;
+			left: 5px;
+		}
+		&:hover{
+			color: rgb(43, 184, 85);
+		&::after{
+			content: '>>';
+			color: rgb(72, 105, 177);
+		}}
+	}
+	.curent-position{
+		font-size: 11px;
+		font-family: "Lato";
+		color: #2e2b2b;
+		user-select: none;
+		pointer-events: none;
+		&::after{
+			content: '';
+		}
+	}
+}
+
+.booking-section{
+	width: 100%;
+	height: 480px;
+	display: flex;
+	&__article{
+		width: 50%;
+		height: 100%;
+		display: flex;
+	}
+	&__order{
+		width: calc(50% - 30px);
+		height: 480px;
+		margin-left: 30px;
+		position: relative;
+		h2{
+			width: 80%;
+			margin: 0;
+			font-size: 25px;
+			font-family: "Lato";
+			color: rgb(0, 0, 0);
+			line-height: 1.197;
+			font-weight: 400;
+			user-select: none;
+		}
+	}
+	&__price{
+		width: 100%;
+		height: 110px;
+		display: flex;
+		justify-content: space-between;
+	}
+	p{
+		width: 75%;
+		font-size: 14px;
+		font-family: "Lato";
+		color: rgb(0, 0, 0);
+		line-height: 1.351;
+		margin: 20px 0 0 0 ;
+	}
+}
+.review{
+	font-size: 13px;
+	font-family: "Lato";
+	color: rgb(0, 114, 188);
+	line-height: 1.994;
+	margin-left: 5px;
+	user-select: none;
+}
+
+.price1{
+	width: 80px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 20px;
+	&__ring{
+		width: 80px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background: #ebebeb url(../img/150.00.png)no-repeat center;
+		background-size: 80%;
+		&:hover ~ .active{
+			display: inline-block;
+			color: rgb(196, 65, 65);
+		}
+	}
+	article{
+		margin-top: 2px;
+		font-size: 14px;
+		font-family: "Lato";
+		color: rgb(125, 125, 125);
+		text-transform: uppercase;
+		transition: .5s;
+	}
+}
+
+.price2{
+	@extend .price1 ;
+	&__ring{
+		@extend .price1__ring ;
+		background: #fad482 url(../img/129.00.png)no-repeat center;
+		background-size: 80%;
+	}
+}
+
+.price3{
+	@extend .price1 ;
+	&__ring{
+		@extend .price1__ring ;
+		background: #84d5d8 url(../img/99.00.png)no-repeat center;
+		background-size: 80%;
+	}
+}
+
+.price4{
+	width: 110px;
+	height: 110px;
+	@extend .price1 ;
+	&__ring{
+		@extend .price1__ring ;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		border: 2px solid  #acd373;
+		background: #fff url(../img/TIERPRICING.png)no-repeat center;
+		background-size: 60%;
+	}
+}
+
+.write-review-btn{
+	background: transparent;
+	border: none;
+	font-family: "Lato";
+	color: rgb(0, 114, 188);
+	text-transform: uppercase;
+	margin-left: 15px;
+	&::before{
+		content: url(../img/pen.png);
+		position: relative;
+		right: 5px;
+	}
+	&:focus{
+		outline: none;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+	&:active{
+		color: #ccc;
+	}
+}
+
+.in-stock-btn{
+	width: 65px;
+	height: 20px;
+	font-size: 11px;
+	font-family: "Lato";
+	color: rgb(255, 255, 255);
+	background: #8dc63f;
+	border: none;
+	border-radius: 6px;
+	text-transform: uppercase;
+	line-height: 1.7;
+	&:focus{
+		outline: none;
+	}
+	&:active{
+		background: #ccc;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.article-img{
+	appearance: none;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d7d7d7;
+	&:focus{
+		outline: none;
+	}
+}
+.input-group, input#classInput {
+	width: 120px;
+}
+
+.first-img{
+	background: url(../img/Layer518.png)no-repeat center;
+	background-size: 80%;
+}
+
+.second-img{
+	background: url(../img/Layer519.png)no-repeat center;
+	background-size: 90%;
+}
+
+.third-img{
+	background: url(../img/Layer520.png)no-repeat center;
+	background-size: 90%;
+}
+
+.article-img:checked{
+	border: 3px solid #d7d7d7;
+}
+
+.choose-img{
+	width: 100px;
+	height: calc(100% - 10px);
+	margin-top: 10px;
+}
+
+.show-img{
+	width: calc(100% - 100px);
+	height: calc(100% - 20px);
+	margin: 10px 0;
+	display: flex;
+	opacity: 0;
+}
+
+.show-img1{
+	background: url(../img/Mainimage.png)no-repeat 20px -10px;
+	background-size: cover;
+	transition: .2s;
+	opacity: 1;
+}
+
+.show-img2{
+	@extend .show-img1 ;
+	background: url(../img/Mainimage2.png)no-repeat 20px -10px;
+}
+
+.show-img3{
+	@extend .show-img1 ;
+	background: url(../img/Mainimage3.png)no-repeat 20px -10px;
+}
+
+
+.form-control {
+	padding: 0;
+	&:focus{
+		outline: none;
+	}
+}
+
+.btn-outline-secondary{
+	border: 1px solid #ccc;
+	font-weight: 200;
+	&:hover{
+		background: rgb(209, 206, 206);
+		border: 1px solid #ccc;
+	}
+}
+
+.pagination-btn{
+	display: flex;
+	height: 70px;
+	align-items: flex-start;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.add-btn{
+	width: 60%;
+	height: 40px;
+	margin-left: 20px;
+	border-radius: 20px;
+	background: #8dc63f;
+	font-size: 18px;
+	font-family: "Lato";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.44;
+	&:focus{
+		outline: none;
+	}
+	&:active{
+	background: #ccc;
+	}
+}
+
+.share-us{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: flex-end;
+	article{
+		font-size: 12px;
+		font-family: "Lato";
+		color: rgb(125, 125, 125);
+		text-transform: uppercase;
+		user-select: none;
+	}
+	a{
+		display: flex;
+		width: 20px;
+		height: 20px;
+		margin-left: 20px;
+	}
+}
+
+.email{
+	background: url(../img/q.png)no-repeat center;
+	background-size: contain;
+}
+.facebook{
+	background: url(../img/f.png)no-repeat center;
+	background-size: contain;
+}
+.twiter{
+	background: url(../img/t.png)no-repeat center;
+	background-size: contain;
+}
+.gmail{
+	background: url(../img/g.png)no-repeat center;
+	background-size: contain;
+}
+.pompom{
+	background: url(../img/p.png)no-repeat center;
+	background-size: contain;
+}
+
+.add-to-wish{
+	margin-left: 30px;
+	background: transparent;
+	border: none;
+	font-size: 12px;
+	font-family: "Lato";
+	color: rgb(0, 114, 188);
+	text-transform: uppercase;
+	line-height: 1.5;
+	&:focus{
+		outline: none;
+	}
+	&:active{
+		color: #ccc;
+	}
+}

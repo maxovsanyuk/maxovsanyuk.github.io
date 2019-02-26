@@ -1,7 +1,6 @@
 'use strict'
 
 $(document).ready(function() {
-
     // dropDown btn language
     $("#countries").msDropdown();
 
@@ -20,17 +19,15 @@ $(document).ready(function() {
         }
     });
 
+    // Spiner
+    $("input[type='number']").inputSpinner();
+
     // tabulathion
     $( function() {
         $( "#tabs" ).tabs();
     } );
 
-    //  Spinner
-    $("input[type='number']").inputSpinner()
-    $("input.small").inputSpinner({groupClass: "input-group-sm"})
-    $("input.large").inputSpinner({groupClass: "input-group-lg"})
-})
-
+});
 
 // slider
 let img1 = document.getElementById('img1');
@@ -62,3 +59,5 @@ img3.addEventListener('change', () => {
         imgFild.classList.add('show-img3');
     }
 })
+
+

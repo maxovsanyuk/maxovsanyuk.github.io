@@ -1,0 +1,227 @@
+@media screen and (min-width: 2000px) {
+    .slider-container {
+        background: url(../img/Brightness_Contrast.png) no-repeat center -100px;
+        background-size: cover;
+    }
+    .header-search {
+        background-size: 3%;
+    }
+    .slick-slider {
+        left: 75%;
+    }
+    .slider-bottom-img {
+        margin: 0 60px;
+    }
+    .promo-img-container {
+        margin: 0 60px;
+    }
+    .search-input{
+        right: 11%;
+    }
+    .slider-container {
+        height: 1000px;
+    }
+    .slider-bottom-all-img {
+        height: 300px;
+    }
+    .slider-bottom-img {
+        width: 450px;
+        height: 80%;
+    }
+    .slick-slide img {
+        height: 500px;
+        width: 500px;
+    }
+    .slick-slider {
+        height: 500px;
+        width: 500px;
+    }
+    .slick-slider {
+        top: 10%;
+        left: 65%;
+    }
+    .lazy::before {
+        top: -10%;
+        left: -30%;
+    }
+    .search-input {
+        right: 2%;
+    }
+    .navigation a {
+        font-size: 24px;
+    }
+    .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+    }
+    .slick-dots li.slick-active button:before {
+        width: 10px;
+        height: 10px;
+    }
+    .header__top,.header__bottom {
+        padding: 0px 2%;
+    }
+    .main-page-menu {
+        padding: 0 2%;
+    }
+    .all-items {
+        width: 100%;
+    }
+    .all-promo-imgs {
+        justify-content: space-around;
+    }
+    .following-products__main_size {
+        height: 650px;
+        overflow: hidden;
+    }
+    .promo-img-container {
+        width: 220px;
+    }
+    .following-products__price {
+        width: 100%;
+    }
+    .following-products__item {
+        width: 260px;
+        margin: 0 10px;
+    }
+    .following-products__img {
+        height: 260px;
+    }
+    .main_height-all-items {
+        height: 480px;
+    }
+    .promo-img-container {
+        width: 360px;
+    }
+    .following-products h2 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider-container {
+        height: 750px;
+    }
+    .all-items {
+        width: 100%;
+    }
+    .header__top, .header__bottom, .main-page-menu {
+        padding: 0 2%;
+    }
+    .search-input {
+        right: 2%;
+    }
+
+    .slick-slide img {
+        height: 300px;
+        width: 300px;
+    }
+    .slick-slider {
+        height: 300px;
+        width: 300px;
+    }
+    .slick-slider {
+        top: 20%;
+        left: 60%;
+    }
+    .lazy::before {
+        transform: scale(.7);
+        top: -40%;
+        left: -30%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider-container {
+        height: 550px;
+    }
+    .slick-slide img {
+        height: 200px;
+        width: 200px;
+    }
+    .slick-slider {
+        height: 200px;
+        width: 200px;
+    }
+    .slick-slider {
+        top: 25%;
+        left: 60%;
+    }
+    .lazy::before {
+        transform: scale(.6);
+        top: -60%;
+        left: -60%;
+    }
+    .slider-bottom-all-img{
+        height: 160px;
+    }
+    .slider-bottom-img {
+        width: 230px;
+        height: 140px;
+    }
+
+    .following-products__img {
+        width: 140px;
+        height: 140px;
+    }
+    .following-products__item {
+        width: 220px;
+        height: 100%;
+    }
+    .main_height-all-items {
+        height: 380px;
+    }
+    .products__price1{
+        width: 40px;
+        height: 40px;
+    }
+    .content-text {
+        font-size: 14px;
+    }
+    .following-products__main_size {
+        height: 550px;
+        overflow: hidden;
+    }
+    .promo-img-container {
+        width: 220px;
+    }
+    .following-products__price {
+        width: 100%;
+    }
+    .following-products__item {
+        width: 160px;
+        margin: 0 10px;
+    }
+    .main_height-all-items {
+        height: 380px;
+        justify-content: center;
+    }
+    .footer-number {
+        font-size: 20px;
+    }
+    .footer__logo {
+        background-size: 80%;
+    }
+    .footer__navigation {
+        width: 17%;
+    }
+    .header-logo{
+        width: 150px;
+    }
+    .navigation a{
+        font-size: 12px;
+    }
+    .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+    }
+    .slick-dots li.slick-active button:before {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+
+
+
