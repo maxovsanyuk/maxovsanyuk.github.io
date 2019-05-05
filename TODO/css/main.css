@@ -22,9 +22,6 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.add-input:hover {
-  background: #000;
-}
 
 .add-input__search, .input-error {
   width: 40%;
