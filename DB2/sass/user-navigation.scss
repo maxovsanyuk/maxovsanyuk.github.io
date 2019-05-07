@@ -1,0 +1,76 @@
+
+.initial-user-section{
+	width: calc(100% - 80px);
+	min-width: 944px;
+	min-height: 768px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #F9FAFC;
+}
+
+.user-navigation{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	border-bottom: 1px solid #DAE4F2;
+}
+
+.user-navigation__link{
+	margin-left: 40px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.685714px;
+	color: #252F48;
+	text-decoration: none;
+	position: relative;
+	&::after{
+		content: url(../img/chevron-right.svg);
+		position: absolute;
+		top: 1px;
+		right: -25px;
+	}
+}
+
+.user-info{
+	width: 160px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-right: 40px;
+}
+
+.user-avatar{
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background: url(../img/login-picture.png)no-repeat center;
+	border: none;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.user-name{
+	margin-left: 10px;
+	position: relative;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.28px;
+	color: #252F48;
+	border: none;
+	&:hover{
+		cursor: pointer;
+	}
+	&::after{
+		content: url(../img/chevron-down.svg);
+		position: absolute;
+		right: -10px;
+	}
+}
+

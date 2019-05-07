@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>DB2</title>
+</head>
+<body>
+    <section class="init-container">
+        <nav class="nav">
+            <a href="#" class="nav__logo"></a>
+            <button class="nav__btn nav__btn_calendar-btn">
+                <span class="calendar-counter">1</span>
+            </button>
+            <button class="nav__btn nav__btn_user-btn"></button>
+            <button class="nav__btn nav__btn_settings-btn"></button>
+            <button class="nav__btn nav__btn_community-btn"></button>
+            <button class="nav__btn nav__btn_message-btn" autofocus></button>
+        </nav>
+
+        <section class="initial-user-section">
+            <div class="user-navigation">
+                <div class="all-links">
+                    <a href="#Home" class="user-navigation__link user-navigation__link-next">Home</a>
+                    <a href="#Network" class="user-navigation__link">Network</a>
+                </div>
+                <div class="user-info">
+                    <button class="user-avatar"></button>
+                    <button class="user-name">Sarah Freeman</button>
+                </div>
+            </div>
+
+            <section class="chat-container">
+                <div class="user-chat-container">
+
+                    <div class="user-chat-container__unread-message">
+                        <button class="friend-avatar first-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Miranda Hops</article>
+                            <article class="message-beginning">Excepteur sint occaecator...</article>
+                        </div>
+                        <div class="time-of-receipt">9:32</div>
+                        <span class="online-sign"></span>
+                        <button class="mute-sign"></button>
+                    </div>
+
+                    <div class="user-chat-container__unread-message">
+                        <button class="friend-avatar second-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Barry Callebaut</article>
+                            <article class="message-beginning">Nemo enim ipsam volupta...</article>
+                        </div>
+                        <div class="time-of-receipt">22:01</div>
+                    </div>
+
+
+                    <div class="user-chat-container__unread-message active-message">
+                        <button class="friend-avatar third-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Stacey Dosh</article>
+                            <article class="message-beginning"> Ut enim ad minima veniam...</article>
+                        </div>
+                        <div class="time-of-receipt">19:15</div>
+                    </div>
+
+                    <div class="user-chat-container__read-message">
+                        <button class="friend-avatar fourth-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Michael Kors</article>
+                            <article class="message-beginning">To take a trivial example...</article>
+                        </div>
+                        <div class="time-of-receipt">13:49</div>
+                    </div>
+
+                    <div class="user-chat-container__read-message">
+                        <button class="friend-avatar fifth-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Johny Cash</article>
+                            <article class="message-beginning">Great explorer of thuth...</article>
+                        </div>
+                        <div class="time-of-receipt">10:25</div>
+                        <span class="online-sign"></span>
+                        <button class="mute-sign"></button>
+                    </div>
+
+                    <div class="user-chat-container__read-message">
+                        <button class="friend-avatar sixth-message-user"></button>
+                        <div class="message-data">
+                            <article class="friend-name">Stacey Dosh</article>
+                            <article class="message-beginning">Ut enim ad minima veniam...</article>
+                        </div>
+                        <div class="time-of-receipt">08:53</div>
+                    </div>
+
+                </div>
+                <div class="user-chat-message">
+                    <input id="search-btn" type="search" class="search-input" placeholder="Search message">
+                    <button class="search-btn" ></button>
+                    <section class="message-fild">
+                        <div class="message-date">Today, 17.03.2018</div>
+                        <div class="friend-message">
+                            <button class="friend-avatar_message third-message-user"></button>
+                            <p class="friend-sent-message">On the other hand, we denounce with righteous indignation!
+                                <span class="bottom-time-of-receipt">01:14</span>
+                            </p>
+                        </div>
+
+                        <div class="my-message">
+                            <p class="my-sent-message">Which is the same as saying?
+                                <span class="bottom-time-of-receipt">01:38</span>
+                            </p>
+                        </div>
+
+                        <div class="friend-message">
+                            <button class="friend-avatar_message third-message-user"></button>
+                            <p class="friend-sent-message">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures
+                                <span class="bottom-time-of-receipt">01:40</span>
+                            </p>
+                        </div>
+
+                        <div class="my-message">
+                            <p class="my-sent-message">To take a trivial example, which of us ever undertakes)
+                                <span class="bottom-time-of-receipt">01:41</span>
+                            </p>
+                        </div>
+
+                    </section>
+                    <section class="message-send-form">
+                        <input class="write-messege" type="text" placeholder="Write a message...">
+                        <div class="all-message-btn">
+                            <button class="stickers-btn"></button>
+                            <label for="file-btn">
+                                <div class="file-btn"></div>
+                            </label>
+                            <input type="file" class="hidden-file-btn" id="file-btn">
+                            <button class="send-message"></button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+        </section>
+    </section>
+</body>
+</html>
