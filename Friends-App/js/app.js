@@ -78,8 +78,8 @@ function initRender(responseData){
 		const inputName = document.getElementById('sort-by-name-up')
 
 		inputName.addEventListener('change', () => {
-			const sortByname = responseData.sort((a, b) => up(a.name.first, b.name.first));
-			renderItems(sortByname)
+			
+			renderItems(sortByname)const sortByname = responseData.sort((a, b) => up(a.name.first, b.name.first));
 		})	
 	}
 	
